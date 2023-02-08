@@ -5,15 +5,11 @@ class keybRead
 
     public static void main(String args[])
     {
-        Scanner s = new Scanner(System.in);    
-        int a, b, c;
-        System.out.println("enter two numbers ");
+        Scanner s = new Scanner(System.in);
 
-        a = s.nextInt();
-        b = s.nextInt();
-        c = a+b;    
-        System.out.print("sum is " + c);
-
-
+        String name;
+        System.out.println("May I know your Name");
+        name = s.nextLine();
+        System.out.println("Hello Mr/Mrs " + name);
     }
 }
