@@ -6,14 +6,11 @@ class keybRead
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
+        
+        sc.useRadix(2);
+        int x = sc.nextInt();
 
-        int x, y;
-        System.out.println("Enter 2 Numbers");
-        x = sc.nextInt();
-        y = sc.nextInt();
-
-        int z = x + y;
-        System.out.println("Sum is " + z);
+        System.out.println(x);
     }
 }
 // reading data from the keyboard.
