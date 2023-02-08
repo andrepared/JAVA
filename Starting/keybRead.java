@@ -1,4 +1,4 @@
-import java.util.*;
+
 
 class keybRead 
 {
@@ -13,3 +13,4 @@ class keybRead
         System.out.println("Hello Mr/Mrs " + name);
     }
 }
+// reading data from the keyboard.
