@@ -7,7 +7,7 @@ class keybRead
     {
         Scanner sc = new Scanner(System.in);
 
-        int x = sc.nextInt();
+        String x = sc.nextLine();
         System.out.println(x);
     }
 }
