@@ -5,12 +5,10 @@ class keybRead
 
     public static void main(String args[])
     {
-        Scanner s = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        String name;
-        System.out.println("May I know your Name");
-        name = s.nextLine();
-        System.out.println("Hello Mr/Mrs " + name);
+        int x = sc.nextInt();
+        System.out.println(x);
     }
 }
 // reading data from the keyboard.
