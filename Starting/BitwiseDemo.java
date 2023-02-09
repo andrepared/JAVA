@@ -10,9 +10,9 @@ class BitwiseDemo
         int x =-0b1010,
          y; 
 
-        y=x>>>1;
+        y=~x;
         System.out.println(String.format("%s", Integer.toBinaryString(x)));  
-        System.out.println(String.format("%s", Integer.toBinaryString(y)));  
+        System.out.println(String.format("%32s", Integer.toBinaryString(y)));  
 
     }
     
