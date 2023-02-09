@@ -3,8 +3,7 @@
 
 
 class BitwiseDemo
-
-{git add
+{
 
     public static void main(String args[])
     {
