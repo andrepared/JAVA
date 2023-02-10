@@ -55,3 +55,4 @@ public class BinSearch {
         }
 
     }
+// Time Complexity Big O (logn)
