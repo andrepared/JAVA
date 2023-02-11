@@ -11,13 +11,16 @@ public class LeapYear {
         year = scan.nextInt();
 
         if (year % 4 == 0) {
-            if (year % 100 == 0) {
-                System.out.println("It is NOT leap year.");
-            } else if (year % 400 == 0) {
+            if (year % 100 == 0) 
+            {
+                if (year % 400 == 0) 
+                {
                 System.out.println("It is a leap year.");
-            } else {
-                System.out.println("It is NOT a leap year.");
-            }
+                }    
+            } 
+            else {
+                System.out.println("It is leap year.");
+            } 
         } else {
             System.out.println("It is NOT a leap year. Sorry!");
         }
