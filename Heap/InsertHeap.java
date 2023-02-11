@@ -2,32 +2,32 @@ package Heap;
 
 public class InsertHeap {
    
-static void insertHeap(int A[], int n)
+public static void insertHeap(int arr[], int n)
 {
     int temp, i = n;
-    temp = A[i];
-    while (i > 1 && temp > A[i / 2]) {
-        A[i] = A[i / 2];
-        i = i / 2;
+    temp = arr[i];
+    while (i > 1 && temp > arr[i % 2 == 0 ? (i/2) -1 : i/2]) {
+        arr[i] = arr[i % 2 == 0 ? (i / 2) - 1 : i / 2];
+        i = i % 2 == 0 ? (i / 2) - 1 : i / 2;
     }
-     A[i] = temp;
+     arr[i] = temp;
 }
 
 // Creating Heap Function 
 
-static int createHeap()
+public static void createHeap()
 {
-    int [] A = {0,10,20,30,25,5,40};
+    int arr[] = {0,10,20,30,25,5,40};
     int i;
 
     for( i=2; i <=7; i++)
     {
-        insertHeap(A, i);
+        insertHeap(arr, i);
     }
-    return A[i];
+    
 };
-public static void main(String arg[])
-{
-   createHeap();
-}
-}
+public static void main(String args[])
+    {
+        createHeap();
+    }
+} 
