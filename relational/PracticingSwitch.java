@@ -1,44 +1,45 @@
 package relational;
+
 import java.util.Scanner;
 
 public class PracticingSwitch {
-    public static void main(String args[]) 
-    {
+    public static void main(String args[]) {
+        // Display type of website
         Scanner scan = new Scanner(System.in);
-        System.out.println("Please enter a number.");
-        int num = scan.nextInt();
+        System.out.println("Enter a url");
+        String url = scan.nextLine();
 
-        switch(num)
-        {
-            case 1:
-                System.out.println("One");
+        String protocol = url.substring(0, url.indexOf(":"));
+
+        switch (protocol) {
+            case "http":
+                System.out.println("Hypertext Transfer Protocol");
                 break;
-            case 2:
-                System.out.println("Two");
+            case "ftp":
+                System.out.println("File Transfer Protocol");
                 break;
-            case 3:
-                System.out.println("Three");
-                break;
-            case 4:
-                System.out.println("Four");
-                break;
-            case 5:
-                System.out.println("Five");
-                break;
-            case 6:
-                System.out.println("Six");
-                break;
-            case 7:
-                System.out.println("Seven");
-                break;
-            case 8:
-                System.out.println("Eight");
-                break;
-            case 9:
-                System.out.println("Nine");
+            case "https":
+                System.out.println("Hypertext Transfer Protocol Secure");
                 break;
             default:
-                System.out.println("Not a valid number. Please try again.");
+                System.out.println("Not a value. Please reenter a value.");
+        }
+
+        String ext = url.substring(url.lastIndexOf(".") + 1);
+
+        switch (ext) {
+            case "com":
+                System.out.println("Commercial");
+                break;
+
+            case "net":
+                System.out.println("Network");
+                break;
+            case "gov":
+                System.out.println("Government");
+                break;
+            default:
+                System.out.println("Not a valid input. Please try again!");
         }
 
     }
