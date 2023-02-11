@@ -27,7 +27,7 @@ public class SCConditions {
         if (age < 14 && age > 0)
         {
             System.out.println("You are a little bb!!");
-        } else if (age > 14 && age <= 55) {
+        } else if (age >= 14 && age <= 55) {
             System.out.println("You are young!");
         } else if (age > 55 && age <85){
             System.out.println("Sorry you are old!");
