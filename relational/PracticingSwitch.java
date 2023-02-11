@@ -1,29 +1,38 @@
 package relational;
+import java.util.Scanner;
 
 public class PracticingSwitch {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a day number.");
+        int day = scan.nextInt();
 
-       String option = "Hello";
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Not a value, please try again.");
 
-            switch (option)
-            {
-                case "Save":
-                    System.out.println("This is the save option");
-                        break;
-                case "New":
-                    System.out.println("This is the new option");
-                        break;
-                case "Save As":
-                    System.out.println("This is the save as option");
-                        break;
-                case "Close":
-                    System.out.println("This is the close option");
-                        break;
-                    default:
-                        System.out.println("This is not an option");
-            }
+        }
 
     }
-
 }
