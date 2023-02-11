@@ -2,37 +2,45 @@ package relational;
 import java.util.Scanner;
 
 public class PracticingSwitch {
-    public static void main(String args[]) {
+    public static void main(String args[]) 
+    {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a day number.");
-        int day = scan.nextInt();
+        System.out.println("Please enter a number.");
+        int num = scan.nextInt();
 
-        switch (day) {
+        switch(num)
+        {
             case 1:
-                System.out.println("Monday");
+                System.out.println("One");
                 break;
             case 2:
-                System.out.println("Tuesday");
+                System.out.println("Two");
                 break;
             case 3:
-                System.out.println("Wednesday");
+                System.out.println("Three");
                 break;
             case 4:
-                System.out.println("Thursday");
+                System.out.println("Four");
                 break;
             case 5:
-                System.out.println("Friday");
+                System.out.println("Five");
                 break;
             case 6:
-                System.out.println("Saturday");
+                System.out.println("Six");
                 break;
             case 7:
-                System.out.println("Sunday");
+                System.out.println("Seven");
+                break;
+            case 8:
+                System.out.println("Eight");
+                break;
+            case 9:
+                System.out.println("Nine");
                 break;
             default:
-                System.out.println("Not a value, please try again.");
-
+                System.out.println("Not a valid number. Please try again.");
         }
 
     }
+
 }
