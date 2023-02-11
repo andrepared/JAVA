@@ -16,7 +16,7 @@ public class MenuForArithOps {
         System.out.println("Enter two numbers:");
         num1 = sc.nextInt();
         num2 = sc.nextInt();
-
+        sc.nextLine();
         System.out.println("Enter option:");
         System.out.println(
         "\t----------\n" +
@@ -25,23 +25,23 @@ public class MenuForArithOps {
         "\t3.MUL\n" +
                         "\t4.DIV\n");
         
-        Scanner word = new Scanner(System.in);
-        String option = word.nextLine();
+        
+        String option = sc.nextLine();
         // option = word.nextLine();
-
+        option = option.toUpperCase();
         switch(option)
         {
             case "ADD":
-                System.out.println(num1 + num2);
+                System.out.println("Sum is " + (num1 + num2));
                 break;
             case "SUB":
-                System.out.println(num1 - num2);
+                System.out.println("Difference is " + (num1 - num2));
                 break;
             case "MUL":
-                System.out.println(num1 * num2);
+                System.out.println("Product is " + (num1 * num2));
                 break;
             case "DIV":
-                System.out.println(num1 / num2);
+                System.out.println("Ratio is " + (num1 / num2));
                 break;
             default:
                 System.out.println("Not a valid input, please try again.");
