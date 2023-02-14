@@ -31,7 +31,7 @@ public class DeleteAndShift {
         // +
         // " and shifting: " + Arrays.toString(newArr));
 
-        // Use ArrayList to Remove Elemnt from Arrau and Shift in Java
+        // Use ArrayList to Remove Element from Array and Shift in Java
         Integer[] arr = { 3, 1, 6, 4, 2, 8 };
         int elementToBeRemoved = 2;
 
