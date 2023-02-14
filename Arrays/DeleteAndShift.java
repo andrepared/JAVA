@@ -1,22 +1,33 @@
 package Arrays;
 
 import java.util.Arrays;
-import java.util.ArrayList;
+
 
 public class DeleteAndShift {
 
-    // Deleting elements by its value when the array contains duplicates
+    // Shifting elements in the same array
     public static void main(String args[]) {
         int[] arr = new int[] { 1, 3, 3, 4, 5 };
-        ArrayList<Integer> arr_new = new ArrayList<>();
         int j = 3;
-        for(int i=0;i<arr.length;i++)
-        {
-            if(arr[i]!=j){
-                arr_new.add(arr[i]);
+        System.out.println("Before deletion: " + Arrays.toString(arr));
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == j) {
+                count++; //Checking for dupes
             }
+            //Shifting elements
+            for (int k = i; k < arr.length -1; k++) {
+                arr[k] = arr[k + 1];
+            }
+            i--;
+            break;
         }
-        System.out.println("Before deletion :" + Arrays.toString(arr));
-        System.out.println("After deletion :" + arr_new);
+    System.out.println("After Deletion: " );
+    for (int i = 0; i < arr.length - count; i++) {
+        System.out.print(" " + arr[i]);
+    }
+    System.out.println();
+    System.out.println("Array after shifting: "+ Arrays.toString(arr));
+    
     }
 }
