@@ -12,7 +12,7 @@ public class KeySearch {
 
         for (int i = 0; i < A.length; i++) {
             if (key == A[i]) {
-                System.out.println("Element found!");
+                System.out.println("Element found at "+i);
                 System.exit(0);
             }
             System.out.println("Element not found");
