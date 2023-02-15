@@ -20,29 +20,42 @@ public class InsertingArray {
 
     // }
     // }
-    public static int[] addX(int n, int arr[], int x) {
-        int i;
-        int newArr[] = new int[n + 1];
+    // public static int[] addX(int n, int arr[], int x) {
+    //     int i;
+    //     int newArr[] = new int[n + 1];
 
-        for (i = 0; i < n; i++)
-            newArr[n] = x;
+    //     for (i = 0; i < n; i++)
+    //         newArr[n] = x;
 
-        return newArr;
-    }
+    //     return newArr;
+    // }
 
     public static void main(String args[]) {
-        int n = 10;
-        // initial size of array
-        int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        System.out.println("Initial Array\n" + Arrays.toString(arr));
+        int[] A = new int[10];
+        A[0] = 3;
+        A[1] = 9;
+        A[2] = 7;
+        A[3] = 8;
+        A[4] = 12;
+        A[5] = 6;
 
-        int x = 50;
+        int n = 6;
+        for (int i = 0; i<n; i++) {
+            System.out.println(A[i] + " ");
+            System.out.println();
+        }
 
-        arr = addX(n, arr, x);
-
-        System.out.println("\nArray with " + x +
-                " add:\n" +
-                Arrays.toString(arr));
+        int x = 20;
+        int index = 2;
+        
+        for (int i = n; i > index; i--) {
+            A[i] = A[i = 1];
+            A[index] = x;
+        }
+        for (int i = 0; i < n; i++) {
+            System.out.println(A[i] + " ");
+            System.out.println();
+        }
     }
 
 }
