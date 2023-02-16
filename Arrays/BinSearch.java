@@ -54,5 +54,7 @@ public class BinSearch {
         missingNumber(arr, 0, h, key);
         }
 
-    }
-// Time Complexity Big O (logn)
+}
+// // Time Complexity Big O (logn)
+
+
