@@ -1,6 +1,6 @@
 package ChallengesWithArrays;
 
-public class FindingMissingElements {
+public class FindingSingleElement {
 
     public static void main(String args[]) {
 
