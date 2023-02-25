@@ -20,6 +20,7 @@ public class MethodPractice {
         int a = email.indexOf("@");
         String name = email.substring(0, a);
         return name;
+
     }
 
 }
