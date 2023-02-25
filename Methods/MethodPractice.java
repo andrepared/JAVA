@@ -33,6 +33,9 @@ public class MethodPractice {
     public static void main(String[] args) {
         int A[] = { 1, 2, 3, 4, 5 };
 
+
+        //contents of actual parameters are copied to formal params in Java
+        // only one method to copy parameters to methods.
         change(A, 2, 20);
 
         for (int x : A)
