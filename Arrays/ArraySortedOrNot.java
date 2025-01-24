@@ -3,7 +3,7 @@ package Arrays;
 // Recursive approach to check if an
 // Array is sorted or not
 
-class CkeckSorted {
+class CheckSorted {
     // Function that returns 0 if a pair
     // is found unsorted
     static int arraySortedOrNot(int arr[], int n) {
